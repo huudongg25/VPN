@@ -1,0 +1,34 @@
+:root {
+    --text-color:#0B132A;
+    --bg-color:#f6f6f6;
+    --primary-color:#F53855;
+  }
+  
+  html {
+    font-family: "Rubik", sans-serif;
+    font-size: 62.5%;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  body {
+    max-width: 1440px;
+  }
+  
+  /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,44 @@
+.features {
+    &_group {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    &_content {
+        max-width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: flex-end;
+    }
+
+    &_heading {
+        font-size: 3.5rem;
+        line-height: 5rem;
+        font-weight: 500;
+        color: var(--text-color);
+    }
+
+    &_desc {
+        font-size: 1.6rem;
+        line-height: 3rem;
+        font-weight: 400;
+        color: #4F5665;
+        margin: 20px 0;
+    }
+
+    &_list {
+        &-item {
+            font-size: 1.4rem;
+            line-height: 3rem;
+            font-weight: 400;
+            color: #4F5665;
+            margin: 10px 0;
+            & i {
+                margin-right: 10px;
+                color: #2FAB73;
+            }
+        }
+    }
+}
