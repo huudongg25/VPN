@@ -9,7 +9,7 @@
     display: none;
     align-items: center;
     &_header {
-        margin: 40px 0;
+        margin-top: 20px;
         text-align: center;
     }
     &_heading {
@@ -47,16 +47,55 @@
         border-radius: 5px;
         background-color: var(--bg-color);
         width: 70%;
-        height: 90%;
+        height: 80%;
         display: none;
         flex-direction: column;
+        animation: fadeIn linear 0.3s;
     }
-    &_login.active {
+    // &_login.active {
+    //     display: flex;
+    // }
+
+    &_register {
+        & i {
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-align: right;
+            padding: 15px 25px;
+            font-size: 2.5rem;
+            color: var(--text-color);
+            cursor: pointer;
+            &:hover {
+                font-size: 3rem;
+                opacity: 0.8;
+            }
+        }
+        position: relative;
+        margin: 0 auto;
+        border-radius: 5px;
+        background-color: var(--bg-color);
+        width: 70%;
+        height: 100%;
+        display: none;
+        flex-direction: column;
+        animation: fadeIn linear 0.3s;
+    }
+    &_register.active {
         display: flex;
     }
 }
 .modal.active {
     display: flex;
+}
+
+.form_register {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    position: relative;
 }
 
 .form_login {
@@ -65,7 +104,13 @@
     width: 100%;
     align-items: center;
 }
-
+.form_group.invalid .form-message{
+    text-align: left;
+    margin-top: -10px;
+    color: red;
+    width: 60%;
+    font-size: 1.3rem;
+}
 .form_group {
     width: 100%;
     display: flex;
@@ -88,7 +133,7 @@
 
 .form_forgot {
     font-size: 1.5rem;
-    margin: 10px 0;
+    margin-top: 30px;
     &:hover {
         text-decoration: underline;
     }
@@ -104,9 +149,23 @@
     background-color: #F53838;
     box-shadow: 2px 2px 3px rgba($color: #000000, $alpha: 0.3);
     color: #fff;
-    margin-top: 20px;
+    margin-top: 10px;
     cursor: pointer;
     &:hover {
         opacity: 0.8;
+    }
+    position: absolute;
+    bottom: 50px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-400px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

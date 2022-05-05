@@ -46,14 +46,14 @@
 
         <div class="started grid wide">
             <div class="started_container row">
-                <div class="started_content col l-6 c-6 m-6">
+                <div class="started_content col l-6 c-12 m-12">
                     <h2 class="started_heading">Want anything to be easy with <span>LaslesVPN.</span>
                     </h2>
                     <p class="started_desc">Provide a network for all your needs with ease and fun using LaslesVPN
                         discover interesting features from us.</p>
                     <a href="" class="started_btn">Get Started</a>
                 </div>
-                <div class="started_img col l-6 c-6 m-6">
+                <div class="started_img col l-6 c-12 m-12">
                     <img src="./assets/img/started.png" alt="" class="started_img-item">
                 </div>
             </div>
@@ -276,7 +276,7 @@
                         </p>
                     </div>
 
-                    <ul class="customer_rate  row">
+                    <ul class="customer_rate row">
                         <li class="customer_block col l-4">
                             <div class="customer_block-container">
                                 <div class="customer_block-header">
@@ -352,10 +352,63 @@
             </div>
         </div>
 
-        <footer class="footer grid wide"></footer>
+        <div class="footerbg">
+            <footer class="footer grid wide">
+                <div class="footer_container row">
+                    <div class="footer_contact col l-6">
+                        <div class="footer_contact-container">
+                            <div class="header_logo-item">
+                                <img src="./assets/img/logo.png" alt="logo" class="header_logo-img">
+                                <span class="header_logo-sponsor">Lasles<span>VPN</span>
+                                </span>
+                            </div>
+                            <p class="footer_contact-desc">
+                                <span>LaslesVPN</span> is a private virtual network that has unique features and has
+                                high security.
+                            </p>
+                            <div class="footer_contact-sponsor">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <span class="footer_contact-copyright">©2020 LaslesVPN</span>
+                        </div>
+                    </div>
+                    <div class="footer_product col l-6">
+                        <div class="footer_product-container">
+                            <div class="footer_product-list">
+                                <ul class="footer_product-items">
+                                    <li class="footer_product-item">Product</li>
+                                    <li class="footer_product-item">Download</li>
+                                    <li class="footer_product-item">Pricing</li>
+                                    <li class="footer_product-item">Locations</li>
+                                    <li class="footer_product-item">Server</li>
+                                    <li class="footer_product-item">Countries</li>
+                                    <li class="footer_product-item">Blog</li>
+                                </ul>
+                                <ul class="footer_product-items">
+                                    <li class="footer_product-item">Engage</li>
+                                    <li class="footer_product-item">LaslesVPN ? </li>
+                                    <li class="footer_product-item">FAQ</li>
+                                    <li class="footer_product-item">Tutorials</li>
+                                    <li class="footer_product-item">About Us</li>
+                                    <li class="footer_product-item">Privacy Policy</li>
+                                    <li class="footer_product-item">Terms of Service</li>
+                                </ul>
+                                <ul class="footer_product-items">
+                                    <li class="footer_product-item">Earn Money</li>
+                                    <li class="footer_product-item">Affiliate</li>
+                                    <li class="footer_product-item">Become Partner</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
 
-        <div class="modal">
-            <div class="modal_login ">
+        <div class="modal ">
+            <!-- <div class="modal_login ">
                 <i class="fa-solid fa-xmark"></i>
                 <div class="modal_header">
                     <h3 class="modal_heading">Login to your account</h3>
@@ -364,7 +417,7 @@
                     </span>
                 </div>
 
-                <form method="POST" action="" class="form_login">
+                <form method="POST" action="" id="form_login" class="form_login">
                     <div class="form_group">
                         <label for="user" class="form_lable">E-mail</label>
                         <input id="user" class="form_control" placeholder="Email address" type="email" name="email">
@@ -378,8 +431,45 @@
                     <a href="" class="form_forgot">Forgot password?</a>
                     <button class="form-submit">Login</button>
                 </form>
+            </div> -->
+
+            <div class="modal_register ">
+                <i class="fa-solid fa-xmark"></i>
+                <div class="modal_header">
+                    <h3 class="modal_heading">Create a new account</h3>
+                </div>
+
+                <form method="POST" action="" id="form_register" class="form_register">
+                    <div class="form_group">
+                        <label for="fullname" class="form_lable">Full name</label>
+                        <input id="fullname" class="form_control" placeholder="Your name" type="text" name="name">
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form_group">
+                        <label for="email" class="form_lable">E-mail</label>
+                        <input id="email" class="form_control" placeholder="Email address" type="email" name="email">
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form_group">
+                        <label for="password" class="form_lable">Password</label>
+                        <input id="password" class="form_control" placeholder="Password" type="password" name="password">
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form_group">
+                        <label for="confirm-pass" class="form_lable">Password</label>
+                        <input id="confirm-pass" class="form_control" placeholder="Confirm password" type="password"
+                            name="confirm-password">
+                        <span class="form-message"></span>
+                    </div>
+                    <button class="form-submit">Login</button>
+                </form>
             </div>
         </div>
+
+        <script src="./register.js"></script>
+        <script src="./login.js"></script>
+        <script src="./main.js"></script>
+   
 </body>
 
 </html>
