@@ -58,20 +58,22 @@
         text-align: center;
     }
     &_login {
-        margin-right: 50px;
+        width: 100%;
+        margin:0 20px;
         font-size: 16px;
         font-weight: 600;
         line-height: 19px;
         color: var(--text-color);
     }
     &_register {
+        width: 100%;
         font-size: 16px;
         font-weight: 500;
         line-height: 19px;
         color: #F53855;
         border: 1px solid #F53855;
         border-radius: 50px;
-        padding: 13px 45px;
+        padding: 13px 20px;
         transition: all linear .2s;
         &:hover {
             background-color: #F53855;

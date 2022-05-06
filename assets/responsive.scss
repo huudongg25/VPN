@@ -1,0 +1,148 @@
+/* =====PC====== */
+
+@media (min-width:64em) {
+
+}
+
+
+/* =====Tablet========== */
+
+@media (min-width:46.25em) and (max-width:64em) {
+    .started_content {
+        margin-bottom: 50px;
+    }
+    .features_content {
+        margin-top: 40px;
+    }
+    .plan {
+        &_choose-item {
+            margin-bottom: 40px;
+        }
+        &_choose-cover {
+            width: 50%;
+        }
+        &_global_heading {
+            width: 70%;
+        }
+        &_global_desc {
+            width: 70%;
+        }
+        &_global_map img {
+            width: 90vw;
+        }
+        &_global_sponsor img {
+            width: 90vw;
+        }
+        .customer_heading {
+            width: 70%;
+        }
+        .customer_desc {
+            width: 70%;
+        }
+        .customer_block {
+            margin-bottom: 20px;
+        }
+    }
+    .footer_container {
+        flex-direction: column-reverse;
+    }
+    .footer_contact {
+        &-container {
+            width: 100%;
+            margin-top: 40px;
+        }
+    }
+    .modal {
+        &_register {
+            width: 80%;
+        }
+    }
+}
+
+
+/* ======Mobile====== */
+
+@media (max-width:46.1875em) {
+    .header_login {
+        margin: 0 5px;
+    }
+    .started_content {
+        margin-bottom: 50px;
+    }
+    .started_content {
+        text-align: center;
+    }
+    .started_img img{
+        width: 100vw;
+    }
+
+    .count {
+        &_container {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        &_item {
+            margin: 20px 0;
+        }
+    }
+    .features_img img {
+        width: 100vw;
+        margin-bottom: 40px;
+    }
+   
+    .plan {
+        &_header {
+            width: 70%;
+        }
+        &_choose-item {
+            margin-bottom: 40px;
+        }
+        &_choose-cover {
+            width: 70%;
+        }
+        &_global_heading {
+            width: 70%;
+        }
+        &_global_desc {
+            width: 70%;
+        }
+        &_global_map img {
+            width: 90vw;
+        }
+        &_global_sponsor img {
+            width: 90vw;
+        }
+    }
+    .customer_heading {
+        width: 70%;
+    }
+    .customer_desc {
+        width: 70%;
+    }
+    .customer_block {
+        margin-bottom: 20px;
+    }
+
+    .footer_container {
+        flex-direction: column-reverse;
+    }
+    .footer_contact {
+        margin: 0 20px;
+        &-container {
+            width: 100%;
+            margin: 40px auto 0 auto;
+        }
+    }
+
+    .footer_product-container {
+        max-width: 90%;
+        margin: 10px 20px;
+    }
+    .modal {
+        &_register {
+            width: 100%;
+        }
+    }
+}
