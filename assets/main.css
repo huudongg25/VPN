@@ -149,8 +149,12 @@ body {
   color: var(--text-color);
 }
 .form_suggest a {
-  text-decoration: none;
+  margin-left: 4px;
+  text-decoration: none !important;
   color: var(--primary-color);
+}
+.form_suggest a:hover {
+  text-decoration: underline !important;
 }
 
 .form-submit {
@@ -235,15 +239,14 @@ body {
   text-align: center;
 }
 .header_login {
-  width: 100%;
-  margin: 0 20px;
+  width: 40%;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 19px;
   color: var(--text-color);
 }
 .header_register {
-  width: 100%;
+  width: 40%;
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
@@ -781,7 +784,12 @@ body {
 /* ======Mobile====== */
 @media (max-width: 46.1875em) {
   .header_login {
+    width: 100%;
     margin: 0 5px;
+  }
+
+  .header_register {
+    width: 120%;
   }
 
   .started_content {
@@ -864,6 +872,9 @@ body {
 
   .modal_register {
     width: 100%;
+  }
+  .modal_heading {
+    font-size: 2rem;
   }
 }
 

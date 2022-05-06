@@ -63,9 +63,15 @@
 /* ======Mobile====== */
 
 @media (max-width:46.1875em) {
+  
     .header_login {
+        width: 100%;
         margin: 0 5px;
     }
+    .header_register{
+        width: 120%;
+    }
+
     .started_content {
         margin-bottom: 50px;
     }
@@ -143,6 +149,9 @@
     .modal {
         &_register {
             width: 100%;
+        }
+        &_heading {
+            font-size: 2rem;
         }
     }
 }

@@ -145,8 +145,12 @@
     font-weight: 500;
     color: var(--text-color);
     & a {
-        text-decoration: none;
+        margin-left: 4px;
+        text-decoration: none !important;
         color: var(--primary-color);
+        &:hover {
+            text-decoration: underline !important;
+        }
     }
 }
 
