@@ -1,3 +1,4 @@
+
 //Validator Object
 function Validator(options) {
     function getParent(element, selector) {
