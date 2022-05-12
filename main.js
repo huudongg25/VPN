@@ -39,6 +39,7 @@ const signUpMobile = $(".header_register-mobile");
 const menuBtn = $(".header_menu-btn");
 const modalMobile = $(".modal-mobile");
 const menuMobile = $(".header_menu-mobile");
+const closeMenuMobile = $(".header_menu-mobile i")
 
 menuBtn.onclick = function () {
   modalMobile.classList.remove("hide");
@@ -47,6 +48,14 @@ menuBtn.onclick = function () {
   menuMobile.classList.remove("hide");
   menuMobile.classList.add("show");
 };
+
+closeMenuMobile.onclick = function () {
+  modalMobile.classList.remove("show");
+  modalMobile.classList.add("hide");
+
+  menuMobile.classList.remove("show");
+  menuMobile.classList.add("hide");
+}
 
 menuMobile.onclick = function (e) {
   e.stopPropagation();

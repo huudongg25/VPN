@@ -828,8 +828,8 @@ ul {
   }
 
   .header_menu-btn {
-    font-size: 3.5rem;
-    padding: 0 0 5px 5px;
+    font-size: 3rem;
+    padding: 0 0 5px 15px;
     margin-right: 10px;
     cursor: pointer;
     position: relative;
@@ -850,6 +850,13 @@ ul {
     transform: translateX(100%);
     animation: all ease-in 0.5s;
     box-shadow: 10px 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .header_menu-mobile i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    font-size: 3.5rem;
   }
 
   .header_menu-mobile.show {
