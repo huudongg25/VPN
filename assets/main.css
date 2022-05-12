@@ -849,6 +849,7 @@ ul {
     text-align: center;
     transform: translateX(100%);
     animation: all ease-in 0.5s;
+    box-shadow: 10px 0 6px rgba(0, 0, 0, 0.3);
   }
 
   .header_menu-mobile.show {
@@ -871,7 +872,7 @@ ul {
     border-bottom: 2px solid #fff;
     width: 50%;
     line-height: 50px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     cursor: pointer;
   }
 
@@ -881,6 +882,8 @@ ul {
 
   .header_login-mobile {
     font-size: 2.5rem;
+    line-height: 50px;
+    font-weight: 500;
     color: #fff;
     margin-right: 10px;
     cursor: pointer;
@@ -891,6 +894,8 @@ ul {
   .header_register-mobile {
     color: #fff;
     font-size: 2.5rem;
+    line-height: 50px;
+    font-weight: 500;
     cursor: pointer;
   }
 
@@ -983,6 +988,7 @@ ul {
 
   .modal_register {
     width: 100%;
+    height: 100%;
   }
   .modal_heading {
     font-size: 2rem;
