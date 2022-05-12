@@ -21,15 +21,55 @@ const regisBtn = ($(".header_register").onclick = function () {
   modalRegister.classList.add("active");
 
   closeBtn.addEventListener("click", function () {
-        modal.classList.remove("active");
-        modalRegister.classList.remove("active");
-      });
+    modal.classList.remove("active");
+    modalRegister.classList.remove("active");
+  });
 });
 
 modal.addEventListener("click", function () {
-    modal.classList.remove("active");
+  modal.classList.remove("active");
 });
 
-modalRegister.onclick = function(e) {
-    e.stopPropagation()
+modalRegister.onclick = function (e) {
+  e.stopPropagation();
+};
+
+// =====mobile nav====
+const signUpMobile = $(".header_register-mobile");
+const menuBtn = $(".header_menu-btn");
+const modalMobile = $(".modal-mobile");
+const menuMobile = $(".header_menu-mobile");
+
+menuBtn.onclick = function () {
+  modalMobile.classList.remove("hide");
+  modalMobile.classList.add("show");
+
+  menuMobile.classList.remove("hide");
+  menuMobile.classList.add("show");
+};
+
+menuMobile.onclick = function (e) {
+  e.stopPropagation();
+};
+
+modalMobile.onclick = function () {
+  modalMobile.classList.remove("show");
+  modalMobile.classList.add("hide");
+};
+
+signUpMobile.onclick = function (e) {
+  modal.classList.add("active");
+  modalRegister.classList.add("active");
+  
+  modalMobile.classList.remove("show");
+  modalMobile.classList.add("hide");
+  
+  e.preventDefault()
+
+  closeBtn.addEventListener("click", function () {
+    modal.classList.remove("active");
+    modalRegister.classList.remove("active");
+  });
 }
+
+

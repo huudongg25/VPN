@@ -1,13 +1,18 @@
 /* =====PC====== */
 
 @media (min-width:64em) {
-
+    .header_menu-mobile {
+        display: none;
+    } 
 }
 
 
 /* =====Tablet========== */
 
 @media (min-width:46.25em) and (max-width:64em) {
+    .header_menu-mobile {
+        display: none;
+    } 
     .started_content {
         margin-bottom: 50px;
     }
@@ -63,10 +68,101 @@
 /* ======Mobile====== */
 
 @media (max-width:46.1875em) {
-  
+    .header_logo {
+        margin-left: 10px;
+    }
+    .modal-mobile {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+        animation: fadeIn linear 0.2s;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .modal-mobile.show {
+        display: block;
+    }
+    .modal-mobile.hide {
+        display: none;
+    }
+    .header_menu-btn {
+        font-size: 3.5rem;
+        padding: 0 0 5px 5px;
+        margin-right: 10px;
+        cursor: pointer;
+        position: relative;
+    }
+    .header_menu-mobile {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 60vw;
+        height: 100%;
+        background-color: var(--primary-color);
+        z-index: 1;
+        color: #fff;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transform: translateX(100%);
+        transition: all linear 0.5s;
+    }
+    .header_menu-mobile.show {
+        display: flex;
+        transform: translateX(0%);
+    }
+    .header_menu-mobile.hide {
+        display: none;
+    }
+
+    .header_list-mobile{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .header_item-mobile {
+        margin-inline: auto;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #fff;
+        width: 50%;
+        line-height: 30px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    .header_btn-mobile {
+        margin-top: 70px;
+    }
+    .header_login-mobile {
+        font-size: 1.5rem;
+        color: #fff;
+        margin-right: 10px;
+        cursor: pointer;
+        padding-right: 10px;
+        border-right: 1px solid #ddd;
+    }
+
+    .header_register-mobile {
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
     .header_login {
         width: 100%;
-        margin: 0 5px;
+        margin: 0 3px;
     }
     .header_register{
         width: 120%;

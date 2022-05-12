@@ -4,7 +4,7 @@
 }
 
 .plan {
-  &_container{
+  &_container {
     justify-content: center;
   }
   &_header {
@@ -180,10 +180,9 @@
     margin: 0 auto 50px auto;
     width: 45%;
   }
-  
+
   &_rate {
     margin-bottom: 100px;
- 
   }
 
   &_block {
@@ -194,13 +193,13 @@
       flex-direction: column;
       justify-content: space-between;
       margin: 0 auto;
-      border: 2px solid #DDDDDD;
+      border: 2px solid #dddddd;
       border-radius: 10px;
       transition: all linear 0.1s;
-        &:hover {
-          border-color: var(--primary-color);
-          box-shadow: 5px 15px 10px rgba($color: #000000, $alpha: 0.1);
-        }
+      &:hover {
+        border-color: var(--primary-color);
+        box-shadow: 5px 15px 10px rgba($color: #000000, $alpha: 0.1);
+      }
     }
     &-header {
       display: flex;
@@ -216,7 +215,7 @@
     &-comment {
       height: 70%;
       display: flex;
-      text-align:justify;
+      text-align: justify;
     }
     &-content {
       font-size: 1.6rem;
@@ -225,37 +224,43 @@
       color: var(--text-color);
     }
   }
-  
-  
-    &_header-view {
-      display: flex;
-      align-items: center;
-      height: 40%;
-    }
+
+  &_header-view {
+    display: flex;
+    align-items: center;
+    height: 40%;
+  }
   &_header-info {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
     width: 100%;
   }
+  &_header-avatar {
+    cursor: pointer;
+  }
   &_header-name {
     font-size: 1.8rem;
     line-height: 3rem;
     font-weight: 500;
     color: var(--text-color);
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
   &_header-place {
     font-size: 1.4rem;
     line-height: 3rem;
     font-weight: 400;
-    color: #4F5665;
+    color: #4f5665;
   }
 
   &_header-star {
     display: flex;
     align-items: center;
     & i {
-      color: #FEA250;
+      color: #fea250;
       font-size: 1.3rem;
       line-height: 3rem;
     }
@@ -288,5 +293,4 @@
       }
     }
   }
-
 }
