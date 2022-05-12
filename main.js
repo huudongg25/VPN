@@ -55,6 +55,9 @@ menuMobile.onclick = function (e) {
 modalMobile.onclick = function () {
   modalMobile.classList.remove("show");
   modalMobile.classList.add("hide");
+
+  menuMobile.classList.remove("show");
+  menuMobile.classList.add("hide");
 };
 
 signUpMobile.onclick = function (e) {
@@ -69,6 +72,9 @@ signUpMobile.onclick = function (e) {
   closeBtn.addEventListener("click", function () {
     modal.classList.remove("active");
     modalRegister.classList.remove("active");
+
+    menuMobile.classList.remove("show");
+    menuMobile.classList.add("hide");
   });
 }
 

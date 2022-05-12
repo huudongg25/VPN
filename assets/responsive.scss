@@ -116,7 +116,7 @@
         align-items: center;
         text-align: center;
         transform: translateX(100%);
-        transition: all linear 0.5s;
+        animation: all ease-in 0.5s;
     }
     .header_menu-mobile.show {
         display: flex;
@@ -135,28 +135,25 @@
         margin-bottom: 30px;
         border-bottom: 2px solid #fff;
         width: 50%;
-        line-height: 30px;
-        font-size: 1.5rem;
+        line-height: 50px;
+        font-size: 2rem;
         cursor: pointer;
-        &:hover {
-            opacity: 0.8;
-        }
     }
     .header_btn-mobile {
         margin-top: 70px;
     }
     .header_login-mobile {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         color: #fff;
         margin-right: 10px;
         cursor: pointer;
         padding-right: 10px;
-        border-right: 1px solid #ddd;
+        border-right: 1px solid #eee;
     }
 
     .header_register-mobile {
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         cursor: pointer;
     }
 
